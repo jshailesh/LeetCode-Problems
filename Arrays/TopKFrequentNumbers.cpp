@@ -11,7 +11,7 @@ public:
         });
 
         // Bucket Sort
-        std::vector<int> buckets(nums.size() + 1);
+        std::vector<std::vector<int>> buckets(nums.size() + 1);
         for (const auto& [value, count] : nums_count) {
             buckets[count].push_back(value);
         }
